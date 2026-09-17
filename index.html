@@ -41,23 +41,25 @@ body{font-family:'Manrope',sans-serif;font-weight:400;letter-spacing:-.01em}
 .contact-card a{color:inherit;text-decoration:none}.contact-row strong a:hover{color:var(--gold2)}.contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}.contact-actions .btn{margin-top:0}.privacy-link{color:#b8c3d2;text-decoration:underline;text-underline-offset:3px;cursor:pointer;background:none;border:0;font:inherit;padding:0}.privacy-link:hover{color:var(--gold2)}.privacy-modal{position:fixed;inset:0;z-index:100;display:none;background:rgba(4,13,25,.72);backdrop-filter:blur(7px);padding:24px;overflow:auto}.privacy-modal.open{display:flex;align-items:center;justify-content:center}.privacy-box{width:min(820px,100%);max-height:90vh;overflow:auto;background:#fff;color:var(--ink);border-radius:24px;padding:34px;box-shadow:0 30px 100px rgba(0,0,0,.35);position:relative}.privacy-box h2{font:800 32px/1.1 Manrope;color:var(--navy);letter-spacing:-.035em;margin:0 42px 18px 0}.privacy-box h3{font:700 17px/1.3 Manrope;color:var(--navy);margin:24px 0 7px}.privacy-box p,.privacy-box li{font-size:13px;line-height:1.75;color:#5f6875}.privacy-box ul{padding-left:20px}.privacy-close{position:absolute;right:18px;top:15px;width:40px;height:40px;border:1px solid #dce1e7;background:#f8f9fa;border-radius:50%;font-size:22px;cursor:pointer;color:var(--navy)}@media(max-width:620px){.contact-actions{grid-template-columns:1fr}.privacy-modal{padding:12px}.privacy-box{padding:25px 20px;border-radius:18px}.privacy-box h2{font-size:27px}}
 
 .hero-logo-wrap{
-  width:190px;
-  height:190px;
-  margin:0 0 27px;
-  padding:8px;
-  border-radius:28px;
+  position:absolute;
+  left:-30px;
+  top:-30px;
+  width:152px;
+  height:152px;
+  padding:7px;
+  border-radius:24px;
   background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(245,241,233,.98));
   border:1px solid rgba(226,199,144,.58);
-  box-shadow:0 24px 55px rgba(0,0,0,.28),0 0 0 1px rgba(226,199,144,.08);
-  position:relative;
+  box-shadow:0 20px 45px rgba(0,0,0,.35),0 0 0 1px rgba(226,199,144,.08);
   overflow:hidden;
+  z-index:3;
 }
 .hero-logo-wrap:after{
   content:'';
   position:absolute;
   inset:5px;
   border:1px solid rgba(200,165,107,.32);
-  border-radius:23px;
+  border-radius:19px;
   pointer-events:none;
 }
 .hero-logo{
@@ -65,25 +67,26 @@ body{font-family:'Manrope',sans-serif;font-weight:400;letter-spacing:-.01em}
   height:100%;
   display:block;
   object-fit:cover;
-  border-radius:21px;
+  border-radius:17px;
   position:relative;
   z-index:1;
 }
 @media(max-width:620px){
   .hero-logo-wrap{
-    width:150px;
-    height:150px;
-    margin-bottom:22px;
-    border-radius:23px;
+    width:96px;
+    height:96px;
+    left:12px;
+    top:12px;
+    border-radius:16px;
   }
-  .hero-logo-wrap:after{border-radius:18px}
-  .hero-logo{border-radius:17px}
+  .hero-logo-wrap:after{border-radius:12px}
+  .hero-logo{border-radius:10px}
 }
 
 /* LOGO + PRODUKTY + OBSZAR */
 .brand-logo{width:58px;height:58px;border-radius:12px;overflow:hidden;background:#fff;display:grid;place-items:center;flex:none;border:1px solid rgba(226,199,144,.35);box-shadow:0 8px 22px rgba(0,0,0,.18)}
 .brand-logo img{width:100%;height:100%;object-fit:cover;display:block}
-.brand small{max-width:280px}
+.brand small{max-width:320px}
 .hero-info{margin:26px 0 30px;padding:18px 20px;border:1px solid rgba(226,199,144,.22);border-radius:18px;background:rgba(255,255,255,.045);backdrop-filter:blur(10px);max-width:690px}
 .hero-info-label{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:10px}
 .hero-info-label.area-label{margin-top:17px}
@@ -109,7 +112,6 @@ body{font-family:'Manrope',sans-serif;font-weight:400;letter-spacing:-.01em}
 </a><nav class="links"><a href="#uslugi">Zakres pomocy</a><a href="#proces">Jak działamy</a><a href="#o-mnie">O mnie</a><a href="#opinie">Opinie</a></nav><a class="navcta" href="#kontakt">Umów rozmowę</a><button class="burger" aria-label="Menu" aria-expanded="false">☰</button><div class="mobile-menu"><a href="#uslugi">Zakres pomocy</a><a href="#proces">Jak działamy</a><a href="#o-mnie">O mnie</a><a href="#opinie">Opinie</a><a href="#kontakt">Kontakt</a></div></div></header>
 <main id="top">
 <section class="hero"><div class="wrap hero-grid"><div>
-<div class="hero-logo-wrap"><img class="hero-logo" src="logo.jpg" alt="Damian Korona — Kredyty Hipoteczne"></div>
 <div class="eyebrow"></div><h1>Twój kredyt.<br><span style="color:var(--gold2)">Dobrze przeprowadzony.</span></h1><p class="lead">Pomagam przejść przez cały proces finansowania — od analizy sytuacji i wyboru rozwiązania, przez dokumenty i wniosek, aż po kontakt z bankiem.</p>
 <div class="hero-info">
   <div class="hero-info-label">Zakres produktów</div>
@@ -122,7 +124,7 @@ body{font-family:'Manrope',sans-serif;font-weight:400;letter-spacing:-.01em}
   <div class="hero-info-label area-label">Obszar działania</div>
   <div class="coverage">Małopolskie <b>·</b> Podkarpackie <b>·</b> częściowo Lubelskie</div>
 </div>
-<div class="hero-actions"><a class="btn gold" href="tel:+48785272477">Umów bezpłatną rozmowę</a><a class="btn ghost" href="#proces">Zobacz, jak to wygląda</a></div><div class="micro">Bez zobowiązań. Najpierw poznajmy Twoją sytuację.</div></div><div class="portrait"><div class="portrait-card"><img src="damian-korona.jpg" alt="Damian Korona — ekspert finansowy"></div><div class="portrait-tag"><strong>Damian Korona</strong><span>Ekspert finansowy · kredyty i finansowanie</span></div><div class="seal">INDYWIDUALNE<br>PODEJŚCIE</div></div></div></section>
+<div class="hero-actions"><a class="btn gold" href="tel:+48785272477">Umów bezpłatną rozmowę</a><a class="btn ghost" href="#proces">Zobacz, jak to wygląda</a></div><div class="micro">Bez zobowiązań. Najpierw poznajmy Twoją sytuację.</div></div><div class="portrait"><div class="hero-logo-wrap"><img class="hero-logo" src="logo.jpg" alt="Damian Korona — Kredyty Hipoteczne"></div><div class="portrait-card"><img src="damian-korona.jpg" alt="Damian Korona — ekspert finansowy"></div><div class="portrait-tag"><strong>Damian Korona</strong><span>Ekspert finansowy · kredyty i finansowanie</span></div><div class="seal">INDYWIDUALNE<br>PODEJŚCIE</div></div></div></section>
 <div class="strip"><div class="wrap strip-grid"><div class="strip-item"><b>17 lat</b><span>doświadczenia w sprzedaży</span></div><div class="strip-item"><b>Wszystkie banki</b><span>analiza dostępnych rozwiązań</span></div><div class="strip-item"><b>Cały proces</b><span>od wniosku do decyzji</span></div></div></div>
 <section id="uslugi"><div class="wrap"><div class="section-head"><div class="kicker">Zakres produktów</div><h2>Finansowanie dopasowane<br>do konkretnej sytuacji.</h2><p>Zakres współpracy obejmuje kredyty hipoteczne, gotówkowe i firmowe oraz leasingi. Każdy proces zaczyna się od poznania potrzeb i możliwości klienta.</p></div><div class="services"><article class="card product-card"><div class="num">01 / MIESZKANIE</div><h3>Kredyt hipoteczny</h3><p>Finansowanie zakupu mieszkania lub domu oraz wsparcie przy przygotowaniu i przeprowadzeniu procesu kredytowego.</p></article><article class="card product-card"><div class="num">02 / GOTÓWKA</div><h3>Kredyt gotówkowy</h3><p>Analiza możliwości finansowania i pomoc w dobraniu rozwiązania do konkretnego celu oraz sytuacji klienta.</p></article><article class="card product-card"><div class="num">03 / FIRMA</div><h3>Kredyt firmowy</h3><p>Finansowanie potrzeb przedsiębiorstwa — od bieżącej działalności po planowane inwestycje.</p></article><article class="card product-card"><div class="num">04 / SAMOCHÓD · SPRZĘT</div><h3>Leasingi</h3><p>Wsparcie w znalezieniu rozwiązania leasingowego dopasowanego do potrzeb firmy i planowanego zakupu.</p></article><article class="card"><div class="num">05 / ANALIZA</div><h3>Ocena sytuacji</h3><p>Rozmawiamy o dochodach, wkładzie własnym, celu finansowania i planach. Na tej podstawie układamy dalszą drogę.</p></article><article class="card"><div class="num">06 / PROCES</div><h3>Kompletna obsługa</h3><p>Wsparcie przy dokumentach, wniosku, operacie szacunkowym i kolejnych etapach kontaktu z bankiem.</p></article></div></div></section>
 <section class="process" id="proces"><div class="wrap"><div class="section-head"><div class="kicker">Jak to wygląda</div><h2>Od pierwszej rozmowy<br>do decyzji banku.</h2><p>Prosty proces bez przekopywania się samemu przez bankowe procedury.</p></div><div class="steps"><div class="step"><span>01</span><h3>Rozmowa</h3><p>Poznajemy Twoją sytuację i cel.</p></div><div class="step"><span>02</span><h3>Analiza</h3><p>Sprawdzamy możliwości finansowania.</p></div><div class="step"><span>03</span><h3>Wybór</h3><p>Dobieramy sensowny kierunek.</p></div><div class="step"><span>04</span><h3>Wniosek</h3><p>Kompletujemy i składamy dokumenty.</p></div><div class="step"><span>05</span><h3>Prowadzenie</h3><p>Jesteś na bieżąco z kolejnymi etapami.</p></div></div></div></section>
